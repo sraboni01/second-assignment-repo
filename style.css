@@ -42,16 +42,12 @@ nav ul li a:hover{
 }
 .header-description-section{
     display: grid;
-    grid-template-columns: repeat(1, 1200px);
+    grid-template-columns: repeat(1, 90%);
     gap: 10px;
     justify-content: center;
-    padding-bottom: 40px;
+    padding: 40px;
 }
 .header-info{
-    display: grid;
-    gap: 10px;
-    justify-content: center;
-    justify-items: center;
     margin: 50px 50px;
     text-align: center;
 }
@@ -143,6 +139,7 @@ img{
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    gap: 80px;
 }
 .single-icon{
     border: 1px solid #FF900E;
@@ -168,14 +165,15 @@ img{
     display: grid;
     grid-template-columns: repeat(1 , 1fr);
     justify-content: center;
+    margin-bottom: 30px;
 }
 .sponspor-title{
     text-align: center;
     padding: 40px 20px;
 }
 .sponser-icon img{
-    height: 60px;
-    width: 150px;
+    height: 100%;
+    width: 100%;
 }
 /* sponser css end */
 footer .footer-area{
@@ -198,24 +196,26 @@ footer .footer-area{
   .header-description-section {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
-  
+  }
+  .header-info {
+    margin: 0px;
+  }
+  .header-description-section {
+    padding: 10px;
   }
   .features, .feature-details-section {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     margin: 10px 0px;
   }
- .sponser-icon {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+  .section-icon, .sponser-icon {
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    flex-direction: column;
   }
   .single-icon {
     margin: 10px;
-  }
-  .section-icon, .sponser-icon {
-    display: flex;
-    flex-direction: column;
-    justify-self: center;
   }
   .feature-single-img, .overly {
     right: -4px;
