@@ -132,3 +132,48 @@ img{
         top: -61px;
         left: -41px;
       }
+      
+/* feature css end */
+.section{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+}
+.section-icon , .sponser-icon{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.single-icon{
+    border: 1px solid #FF900E;
+    padding: 30px;
+}
+.single-icon img{
+    height: 46px;
+    width: 46px;
+}
+.single-icon span{
+    display: block;
+    font-size: 44px;
+}
+.single-icon h4{
+    font-size: 16px;
+    color:#4e4d4d;
+    margin-top: 10px;
+}
+
+/*  some part css end */
+
+.sponspors{
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    justify-content: center;
+}
+.sponspor-title{
+    text-align: center;
+    padding: 40px 20px;
+}
+.sponser-icon img{
+    height: 60px;
+    width: 160px;
+}
