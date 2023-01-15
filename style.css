@@ -72,6 +72,12 @@ img{
     font-weight: 600;
     border: 1px solid #FF900E;
     border-radius: 5px;
+    transform: 1s ease;
+}
+.btn:hover{
+    background-color: #fff;
+    color: #FF900E;
+    cursor: pointer;
 } 
 .header-img img{
     width: 100%;
@@ -88,6 +94,14 @@ img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+}
+.feature-img img{
+    transition: 1s ease-in-out;
+}
+.feature-img img:hover{
+    transform: rotate(60deg);
+    border: 5px solid #FF900E;
+    
 }
 .grey{
     color: grey;
@@ -111,6 +125,16 @@ img{
 .feature-single-info{
     box-shadow: 0px 3px 35px 0px rgba(196,185,185,0.75);
     padding: 25px 20px;
+    transition: 1s ease;
+}
+.feature-single-info:hover{
+    background-color: #f79627;
+    color: #fff;
+    box-shadow: 0px 3px 35px 0px rgba(247, 153, 13, 0.75);
+}
+.feature-single-info:hover p{
+    color: #fff;
+    transition: 1s ease;
 }
 .feature-single-info h3 {
     font-size: 24px;
@@ -137,13 +161,14 @@ img{
 }
 .section-icon , .sponser-icon{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     text-align: center;
     gap: 80px;
+    padding: 40px;
 }
 .single-icon{
     border: 1px solid #FF900E;
-    padding: 30px;
+    padding: 20px;
 }
 .single-icon img{
     height: 46px;
@@ -190,8 +215,10 @@ footer .footer-area{
         padding: 0px 20px;
       }
     .top-bar{
-      display: flex;
       flex-direction: column;
+  }
+  nav ul li a{
+    padding: 5px;
   }
   .header-description-section {
     display: grid;
@@ -205,7 +232,7 @@ footer .footer-area{
   }
   .features, .feature-details-section {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: repeat(1, 1fr); 
     margin: 10px 0px;
   }
   .section-icon, .sponser-icon {
@@ -220,4 +247,27 @@ footer .footer-area{
   .feature-single-img, .overly {
     right: -4px;
   }
+  .title{
+    font-size: 38px;
   }
+  }
+  @media only screen and (max-width: 577px) and (min-width: 992px){
+    .top-bar{
+        flex-direction: column;
+    }
+    .header-description-section {
+      display: grid;
+      grid-template-rows: repeat(1, 1fr);
+    }
+    .features, .feature-details-section {
+      grid-template-columns: repeat(1, 1fr);
+      margin: 10px 0px;
+    }
+    .section-icon{
+      flex-direction: column;
+    }
+    .feature-single-img, .overly {
+      right: -4px;
+    }
+  }
+
