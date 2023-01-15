@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    background-color: rgba(255, 144, 14, 0.1);
+}
+.container{
+    padding: 50px;
+}
+.top-bar{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+    align-items: center;
+}
+.top-bar .logo{
+    font-size: 35px;
+    font-weight: 700;
+}
+nav ul{
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style: none;
+    margin-left: 25px;
+    font-size: 16px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(39, 38, 38);
+    padding: 15px;
+    
+}
+nav ul li a:hover{
+    color: darkblue;
+    border-bottom: 2px solid darkblue;
+}
+.header-description-section{
+    display: grid;
+    grid-template-columns: repeat(1, 1200px);
+    gap: 10px;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+.header-info{
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    margin: 50px 50px;
+    text-align: center;
+}
+.title{
+    font-size: 44px;
+    font-weight: 700;
+    color: #131313;
+}
+p{
+    color: #4e4d4d;
+    margin: 20px 0px;
+}
+img{
+    width: 100%;
+    height: 100%;
+  }
+.btn{
+    padding: 15px 25px;
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+} 
+.header-img img{
+    width: 100%;
+}
+/* header part end */
+.features ,.feature-details-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 70px;
+    margin: 50px 0px;
+}
+.feature-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.grey{
+    color: grey;
+}
+.black{
+    color:black
+}
+.orange{
+    color: #FF900E;
+}
+.feature-des{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    padding-top: 40px;
+}
+.feature-des h2{
+    border-left: 5px solid #FF900E;
+    padding-left: 10px;
+}
+.feature-single-info{
+    box-shadow: 0px 3px 35px 0px rgba(196,185,185,0.75);
+    padding: 25px 20px;
+}
+.feature-single-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .feature-single-img button{
+    display: grid;
+    padding: 25px 20px;
+  }
+  .feature-single-img button .year{
+    font-size: 40px;
+  }
+.feature-single-img .overly{
+        position: relative;
+        top: -61px;
+        left: -41px;
+      }
