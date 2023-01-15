@@ -175,5 +175,13 @@ img{
 }
 .sponser-icon img{
     height: 60px;
-    width: 160px;
+    width: 150px;
+}
+/* sponser css end */
+footer .footer-area{
+    background-color: rgba(255, 144, 14, 0.1);
+    width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
 }
